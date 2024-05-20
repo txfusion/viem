@@ -1443,6 +1443,10 @@ export const sidebar = {
         text: 'L1 Public Actions',
         items: [
           {
+            text: 'approveL1ERC20',
+            link: '/zksync/actions/approveL1ERC20',
+          },
+          {
             text: 'getL1Allowance',
             link: '/zksync/actions/getL1Allowance',
           },
@@ -1453,6 +1457,34 @@ export const sidebar = {
           {
             text: 'getL1TokenBalance',
             link: '/zksync/actions/getL1TokenBalance',
+          },
+          {
+            text: 'getBaseToken',
+            link: '/zksync/actions/getBaseToken',
+          },
+          {
+            text: 'getErc20ContractValue',
+            link: '/zksync/actions/getErc20ContractValue',
+          },
+          {
+            text: 'getL2BridgeAddress',
+            link: '/zksync/actions/getL2BridgeAddress',
+          },
+          {
+            text: 'getL2TransactionBaseCost',
+            link: '/zksync/actions/l2TransactionBaseCost',
+          },
+          {
+            text: 'requestL2TransactionDirect',
+            link: '/zksync/actions/requestL2TransactionDirect',
+          },
+          {
+            text: 'requestL2TransactionTwoBridges',
+            link: '/zksync/actions/requestL2TransactionTwoBridges',
+          },
+          {
+            text: 'sharedBridge',
+            link: '/zksync/actions/sharedBridge',
           },
         ],
       },
