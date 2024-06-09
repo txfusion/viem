@@ -1,6 +1,6 @@
 import { zkSyncLocalNode, zkSyncLocalNodeL1 } from '~viem/chains/index.js'
 import { createClient } from '~viem/clients/createClient.js'
-import { http, type Address, type Hex } from '~viem/index.js'
+import { http, type Address, type Hex, zeroAddress } from '~viem/index.js'
 import type { GetL2GasLimitParameters } from '~viem/zksync/index.js'
 import type {
   DepositTransactionExtended,
@@ -556,11 +556,30 @@ export const mockRequestTwoBridgesParamters = {
   txValue: 1915732001613248n,
 }
 
-export const mockRequestReturnData = async (method: string) => {
+export const mockWithdrawTx = {
+  token: zeroAddress as Address,
+  amount: 1n,
+  to: mockAddress as Address,
+  from: mockAddress as Address,
+}
+
+export const mockIsWithdrawalFinalized = {
+  chainId: 270n,
+  logL1BatchNumber: 2n,
+  proofId: 1n,
+  l1BridgeAddress: mockAddress as Address,
+}
+
+export const mockRequestReturnData = async (
+  method: string,
+  chainId: bigint,
+) => {
+  if (method === 'eth_chainId') return chainId
   if (method === 'eth_getTransactionReceipt') return mockTransactionReceipt
   if (method === 'eth_getBlockByHash') return mockBlock
   if (method === 'eth_getBlockByNumber') return mockBlock
   if (method === 'eth_sendRawTransaction') return mockHash
+  if (method === 'eth_sendTransaction') return mockHash
   if (method === 'zks_L1ChainId') return mockChainId
   if (method === 'zks_estimateFee') return mockFeeValues
   if (method === 'zks_getAllAccountBalances') return mockAccountBalances
@@ -580,8 +599,8 @@ export const mockRequestReturnData = async (method: string) => {
   return undefined
 }
 
-export function mockClientPublicActionsL2(client: any) {
+export function mockClientPublicActionsL2(client: any, chainId?: bigint) {
   client.request = async ({ method }: any) => {
-    return mockRequestReturnData(method)
+    return mockRequestReturnData(method, chainId ?? 270n)
   }
 }

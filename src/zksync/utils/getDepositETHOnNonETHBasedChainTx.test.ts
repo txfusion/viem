@@ -35,7 +35,7 @@ test('getDepositETHOnETHBasedChainTx', async () => {
         "maxFeePerGas": 15000000100n,
         "maxPriorityFeePerGas": 150000000000n,
         "value": 5n,
-      },a
+      },
       "refundRecipient": "0x36615Cf349d7F6344891B1e7CA7C72883F5dc049",
       "secondBridgeEncodeData": {
         "amount": 0n,
