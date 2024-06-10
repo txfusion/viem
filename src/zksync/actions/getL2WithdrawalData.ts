@@ -13,13 +13,13 @@ import { getLogProof } from './getLogProof.js'
 import { getWithdrawalL2ToL1Log } from './getWithdrawalL2ToL1Log.js'
 import { getWithdrawalLog } from './getWithdrawalLog.js'
 
-export type IsWithdrawalFinalizedParameters = {
+export type GetL2WithdawalLogDataParameters = {
   hash: Hash
   index: number
   l1BridgeAddress: Address
 }
 
-export type IsWithdrawalFinalizedReturnType = {
+export type GetL2WithdawalLogDataReturnType = {
   log: ZkSyncLog
   l2ToL1LogIndex: number
   proof: MessageProof
@@ -34,8 +34,8 @@ export async function getL2WithdawalLogData<
   TAccount extends Account | undefined,
 >(
   clientL2: Client<Transport, TChain, TAccount>,
-  parameters: IsWithdrawalFinalizedParameters,
-): Promise<IsWithdrawalFinalizedReturnType> {
+  parameters: GetL2WithdawalLogDataParameters,
+): Promise<GetL2WithdawalLogDataReturnType> {
   const { log, l1BatchTxId } = await getWithdrawalLog(clientL2, {
     withdrawalHash: parameters.hash,
     index: parameters.index,
