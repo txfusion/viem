@@ -1,5 +1,16 @@
 # viem
 
+## 2.16.4
+
+### Patch Changes
+
+- [`7e95377c`](https://github.com/wevm/viem/commit/7e95377ca26a87570aa16b6805f6cee58aeb9aef) Thanks [@jxom](https://github.com/jxom)! - Bumped dependencies:
+
+  - `@noble/curves`: `1.2.0` → `1.4.0`
+  - `@noble/hashes`: `1.3.2` → `1.4.0`
+  - `@scure/bip32`: `1.3.2` → `1.4.0`
+  - `@scure/bip39`: `1.2.1` → `1.3.0`
+
 ## 2.16.3
 
 ### Patch Changes
