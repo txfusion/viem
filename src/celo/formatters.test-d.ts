@@ -25,7 +25,7 @@ describe('block', () => {
     Assign<
       ExactPartial<RpcBlock>,
       CeloBlockOverrides & {
-        transactions: `0x${string}`[] | CeloRpcTransaction[]
+        transactions: readonly `0x${string}`[] | readonly CeloRpcTransaction[]
       }
     >
   >()
@@ -158,8 +158,6 @@ describe('smoke', () => {
 
     prepareTransactionRequest(client, {
       feeCurrency: '0x',
-      gatewayFee: 0n,
-      gatewayFeeRecipient: '0x',
     })
 
     // @ts-expect-error `gasPrice` is not defined
@@ -179,8 +177,6 @@ describe('smoke', () => {
 
     sendTransaction(client, {
       feeCurrency: '0x',
-      gatewayFee: 0n,
-      gatewayFeeRecipient: '0x',
     })
   })
 
@@ -193,8 +189,6 @@ describe('smoke', () => {
 
     signTransaction(client, {
       feeCurrency: '0x',
-      gatewayFee: 0n,
-      gatewayFeeRecipient: '0x',
     })
   })
 
@@ -207,8 +201,6 @@ describe('smoke', () => {
     sendTransaction(client, {
       chain: celo,
       feeCurrency: '0x',
-      gatewayFee: 0n,
-      gatewayFeeRecipient: '0x',
     })
   })
 })
