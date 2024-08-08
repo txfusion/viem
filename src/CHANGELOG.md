@@ -1,5 +1,11 @@
 # viem
 
+## 2.19.3
+
+### Patch Changes
+
+- [#2595](https://github.com/wevm/viem/pull/2595) [`e0221463`](https://github.com/wevm/viem/commit/e022146393bc3f3f315f2cf6a5b419adc1e5983d) Thanks [@gregfromstl](https://github.com/gregfromstl)! - Exported `universalSignatureValidatorAbi`.
+
 ## 2.19.2
 
 ### Patch Changes
