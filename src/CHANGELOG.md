@@ -1,5 +1,19 @@
 # viem
 
+## 2.21.0
+
+### Minor Changes
+
+- [#2665](https://github.com/wevm/viem/pull/2665) [`2e05c52a`](https://github.com/wevm/viem/commit/2e05c52abea485475afa72523a4da0410cd4316c) Thanks [@jxom](https://github.com/jxom)! - Added built-in support for Linea gas & fee estimations.
+
+- [#2665](https://github.com/wevm/viem/pull/2665) [`2e05c52a`](https://github.com/wevm/viem/commit/2e05c52abea485475afa72523a4da0410cd4316c) Thanks [@jxom](https://github.com/jxom)! - Deprecated `chain.fees.defaultPriorityFee`, use `chain.fees.maxPriorityFeePerGas` instead.
+
+### Patch Changes
+
+- [#2664](https://github.com/wevm/viem/pull/2664) [`5c3ed45c`](https://github.com/wevm/viem/commit/5c3ed45ca7d32bf6b5cb96dc0f90fd30cb903680) Thanks [@abs3ntdev](https://github.com/abs3ntdev)! - Added Tron chain
+
+- [#2660](https://github.com/wevm/viem/pull/2660) [`2813fbd2`](https://github.com/wevm/viem/commit/2813fbd218a54c99d92f1e29e5ca1b2961a06071) Thanks [@RobbyUitbeijerse](https://github.com/RobbyUitbeijerse)! - Adjusted sophon native token symbol.
+
 ## 2.20.1
 
 ### Patch Changes
