@@ -256,7 +256,7 @@ describe('entryPointVersion: 0.7', async () => {
       Request Arguments:
         callData:              0xb61d27f60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000000
         callGasLimit:          0
-        factory:               0xfb6dab6200b8958c2655c3747708f82243d3f32e
+        factory:               0xfb6dAB6200b8958C2655C3747708F82243d3F32E
         factoryData:           0xf14ddffc000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb922660000000000000000000000000000000000000000000000000000000000000001
         maxFeePerGas:          15 gwei
         maxPriorityFeePerGas:  2 gwei
@@ -341,10 +341,10 @@ describe('entryPointVersion: 0.7', async () => {
         nonce:                          30902162761095135455113551806464
         paymasterPostOpGasLimit:        0
         paymasterVerificationGasLimit:  0
-        preVerificationGas:             50692
+        preVerificationGas:             48501
         sender:                         0xE911628bF8428C23f179a07b081325cAe376DE1f
         signature:                      0xdeadbeef
-        verificationGasLimit:           84007
+        verificationGasLimit:           79159
 
       Details: UserOperation reverted with reason: AA24 signature error
       Version: viem@x.y.z]
