@@ -1,5 +1,11 @@
 # viem
 
+## 2.21.38
+
+### Patch Changes
+
+- [#2944](https://github.com/wevm/viem/pull/2944) [`a41f29ddec7cb6310ac42e069b390fe6bb14e4fa`](https://github.com/wevm/viem/commit/a41f29ddec7cb6310ac42e069b390fe6bb14e4fa) Thanks [@pro100skm](https://github.com/pro100skm)! - Updated XDC Testnet Block Explorer URL.
+
 ## 2.21.37
 
 ### Patch Changes
