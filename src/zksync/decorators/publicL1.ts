@@ -27,7 +27,7 @@ export type PublicActionsL1<
    * - Docs: https://viem.sh/zksync/actions/getL1Allowance
    *
    * @param client - Client to use
-   * @param parameters - {@link AllowanceL1Parameters}
+   * @param parameters - {@link GetL1AllowanceParameters}
    * @returns The amount of approved tokens for a specific L1 bridge. {@link GetL1AllowanceReturnType}
    *
    * @example
@@ -117,7 +117,7 @@ export type PublicActionsL1<
    * - Docs: https://viem.sh/zksync/actions/getL1TokenBalance
    *
    * @param client - Client to use
-   * @param parameters - {@link BalanceL1Parameters}
+   * @param parameters - {@link GetL1BalanceParameters}
    * @returns Returns the amount of the token held by the account on the L1 network. {@link GetL1BalanceReturnType}
    *
    * @example
