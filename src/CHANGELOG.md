@@ -1,5 +1,13 @@
 # viem
 
+## 2.21.50
+
+### Patch Changes
+
+- [#3045](https://github.com/wevm/viem/pull/3045) [`dd0ae9cd98024f45f7afb2f4bf0c434ce3b2bb09`](https://github.com/wevm/viem/commit/dd0ae9cd98024f45f7afb2f4bf0c434ce3b2bb09) Thanks [@Zhangnong](https://github.com/Zhangnong)! - Added REI Mainnet.
+
+- [`d98795c45cbc20bf6525001bd7d73d90e5352645`](https://github.com/wevm/viem/commit/d98795c45cbc20bf6525001bd7d73d90e5352645) Thanks [@jxom](https://github.com/jxom)! - Added 5ireChain.
+
 ## 2.21.49
 
 ### Patch Changes
