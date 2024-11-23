@@ -84,7 +84,7 @@ export type PublicActionsL2<
   /**
    * Returns the addresses of the default zksync Era bridge contracts on both L1 and L2.
    *
-   * @returns The Addresses of the default zksync Era bridge contracts on both L1 and L2. {@link DefaultBridgeAddressesReturnType}
+   * @returns The Addresses of the default zksync Era bridge contracts on both L1 and L2. {@link GetDefaultBridgeAddressesReturnType}
    *
    * @example
    * import { createPublicClient, http } from 'viem'
@@ -205,7 +205,7 @@ export type PublicActionsL2<
   /**
    * Returns additional zksync-specific information about the L2 block.
    *
-   * @returns zksync-specific information about the L2 block {@link BaseBlockDetails}
+   * @returns zksync-specific information about the L2 block {@link GetBlockDetailsParameters}
    * @param args - {@link GetBlockDetailsParameters}
    *
    * @example
@@ -227,7 +227,7 @@ export type PublicActionsL2<
   /**
    * Returns data pertaining to a given batch.
    *
-   * @returns data pertaining to a given batch {@link BatchDetails}
+   * @returns data pertaining to a given batch {@link GetL1BatchDetailsParameters}
    * @param args - {@link GetL1BatchDetailsParameters}
    *
    * @example
@@ -331,7 +331,7 @@ export type PublicActionsL2<
   /**
    * Returns an estimated Fee for requested transaction.
    *
-   * @returns an estimated {@link Fee} for requested transaction.
+   * @returns an estimated {@link EstimateFeeParameters} for requested transaction.
    * @param args - {@link EstimateFeeParameters}
    *
    * @example
