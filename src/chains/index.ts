@@ -478,6 +478,15 @@ export {
   zksyncSepoliaTestnet as zkSyncSepoliaTestnet,
   zksyncSepoliaTestnet,
 } from './definitions/zksyncSepoliaTestnet.js'
+export {
+  zksyncLocalHyperchain
+} from './definitions/zksyncLocalHyperchain.js'
+export {
+  zksyncLocalCustomHyperchain
+} from './definitions/zksyncLocalCustomHyperchain.js'
+export {
+  zksyncLocalHyperchainL1
+} from './definitions/zksyncLocalHyperchainL1.js'
 export { zora } from './definitions/zora.js'
 export { zoraSepolia } from './definitions/zoraSepolia.js'
 export { zoraTestnet } from './definitions/zoraTestnet.js'
