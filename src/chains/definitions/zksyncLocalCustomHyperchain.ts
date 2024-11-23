@@ -1,5 +1,5 @@
-import { defineChain } from '~viem/utils/index.js'
-import { chainConfig } from '~viem/zksync/index.js'
+import { defineChain } from '../../utils/chain/defineChain.js'
+import { chainConfig } from '../../zksync/chainConfig.js'
 
 export const zksyncLocalCustomHyperchain = /*#__PURE__*/ defineChain({
   ...chainConfig,
